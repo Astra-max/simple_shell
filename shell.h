@@ -3,7 +3,7 @@
 
 /* Libraries needed for code exe */
 
-#include <stdio.h>
+#include <stdio.h> /* color command output */
 #include <stdlib.h>
 #include <unistd.h>
 #include <string.h>
@@ -14,7 +14,14 @@
 #include <fcntl.h>
 #include <errno.h>
 
-/* Macros i need */
+/* To color my command output will be implemented later */
+
+#define RED_TEXT    "\x1b[31m"
+#define GREEN_TEXT  "\x1b[32m"
+#define YELLOW_TEXT "\x1b[33m"
+#define RESET_TEXT  "\x1b[0m"
+
+/* needed for my shell program */
 
 #define CONVERT_LOWERCASE 1
 #define CONVERT_UNSIGNED  2
